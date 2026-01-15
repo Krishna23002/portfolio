@@ -1,38 +1,197 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #0f0f0f 0%,
+    #151515 100%
+  );
+  color: #eaeaea;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #2a2a2a;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav h1{
+  color: #fad342;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover{
+  color: #fad342;
+}
+
+.home-section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.home-section img{
+  width: 300px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+.home-section span{
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fad342;
+}
+
+.home-section p{
+  font-size: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-section strong{
+  color: #fad342;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-section, .project-section, .contact-section{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-section h1, .project-section h1, .contact-section h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fad342;
+}
+
+.about-section p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.box{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card{
+  background: #1f1f1f;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card h2{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fad342;
+}
+
+.project-list{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.project-list .card{
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img{
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.contact-section p{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input, .contact-form textarea{
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.contact-form button{
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  background: #fad342;
+  color: #0a0a0a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a{
+  color: #eaeaea;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover{
+  color: #fad342;
+}
+
+footer{
+  text-align: center;
+  padding: 1rem;
+  background: #0a0a0a;
+  border-top: 1px solid #2a2a2a;
+  color: #9ca3af;
 }

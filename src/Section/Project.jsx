@@ -7,19 +7,21 @@ const Project = () => {
       <h1>Projects</h1>
       <div className='project-list'>
         <Card
-            title="Personal Portfolio Website"
-            description="A personal portfolio website built with React to showcase my projects and skills."
-            image={`${process.env.PUBLIC_URL}/proj-img1.jpg`}
+            title="MERN Todo App"
+            description="A full-stack task management application built with the MERN stack, featuring CRUD operations, RESTful APIs, and a responsive React frontend."
+            image={`${process.env.PUBLIC_URL}/img1 (2).png`}
+            url="https://merntodoappbuild.netlify.app/"
         />
         <Card   
-            title="E-commerce Store"
-            description="An online store built with Node.js and Express, featuring user authentication and payment integration."
-            image={`${process.env.PUBLIC_URL}/proj-img1.jpg`}
+            title="Home Rental Website"
+            description="A full-stack home rental web application enabling property browsing and listing management, built with secure authentication, scalable backend APIs, and a modern responsive UI."
+            image={`${process.env.PUBLIC_URL}/img2.png`}
+            url="https://quickrents.netlify.app/"
         />
         <Card
-            title="Chat Application"
-            description="A real-time chat application using Socket.io and React for seamless communication."
-            image={`${process.env.PUBLIC_URL}/proj-img1.jpg`}
+            title="Personal Portfolio Website"
+            description="A modern and responsive personal portfolio website developed using React, highlighting my projects, skills, and professional background with clean UI and smooth navigation."
+            image={`${process.env.PUBLIC_URL}/img3.png`}
         />
     </div>
     </div>

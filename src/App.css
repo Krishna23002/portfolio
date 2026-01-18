@@ -48,19 +48,63 @@ nav h1{
   color: #fad342;
 }
 
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.line1, .line2, .line3{
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px){
+  .nav-links{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(18, 18, 18, 0.9);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .nav-links li{
+    margin: 1rem 0;
+  }
+
+  .burger{
+    display: block;
+  }
+
+  .nav-active{
+    display: flex;
+  }
+}
+
 .home-section{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+  padding-top: 2rem;
 }
 
 .home-section img{
   width: 300px;
   border-radius: 100%;
   margin-bottom: 1rem;
+}
+
+.home-section img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .home-section span{
@@ -112,8 +156,13 @@ nav h1{
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 610px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
 .card h2{
@@ -126,6 +175,7 @@ nav h1{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -137,6 +187,11 @@ nav h1{
   width: 100%;
   border-radius: 8px;
   margin-bottom: 0.5rem;
+}
+
+.card img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .contact-form{

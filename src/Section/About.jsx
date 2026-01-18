@@ -10,7 +10,7 @@ const About = () => {
             </div>
             <Card title="Education" description="B.Sc. in Computer Science from Mumbai University"/>
             <Card title="Skills" description="HTML, CSS, JavaScript, React, Node.js, Express, MongoDB"/>
-            <Card title="Hobbies" description="Coding, Reading Tech Blogs, Playing Chess, Traveling"/>
+            <Card title="Hobbies" description="Coding, Reading Tech Blogs, Watching Movies, Traveling"/>
         </div>
     )
 }

@@ -5,7 +5,12 @@ const Contact = () => {
         <div className="contact-section" id='contact'>
             <h1>Contact Me</h1>
             <p>If you have any questions or would like to get in touch, please fill out the form below or reach me through social media.</p>
-            <form className="contact-form">
+            <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                className="contact-form"
+            >
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" required />
 
@@ -19,20 +24,23 @@ const Contact = () => {
             </form>
 
             <div class="social-icons">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/krishnakumar-arjun-7b2b59362/" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Krishna23002?tab=repositories" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+                </a> */}
+                <a href="https://instagram.com/_arjunkrishnakumar_?igsh=YTZneDFpbGdsYnpk" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i>
+                </a> */}
+                <a href="mailto:arjunkrishnakumar90@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
 
